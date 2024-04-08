@@ -26,6 +26,8 @@ body {
 .login-form h2 {
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 0;
+    color: #333;
 }
 .login-form label {
     font-size: 14px;
@@ -43,13 +45,33 @@ body {
 }
 .login-form input[type="submit"] {
     width: 100%;
+    padding: 12px 20px;
     background-color: #4CAF50;
     color: white;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
 }
+
 .login-form input[type="submit"]:hover {
     background-color: #45a049;
+    transform: scale(1.05); /* Efecto de escala al pasar el cursor */
+}
+
+.login-form input[type="submit"]:active {
+    transform: scale(0.95); /* Efecto de escala al hacer clic */
+}
+
+.button{
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
 }
